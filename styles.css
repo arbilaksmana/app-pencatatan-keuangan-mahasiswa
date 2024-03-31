@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-section,
+.history-section,
+.balance {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 20px; /* Margin between sections */
+}
+
+.input-section h2,
+.history-section h2,
+.balance h2 {
+  margin-top: 0;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"],
+.input-section select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section button {
+  width: 97%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+.history-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-section th,
+.history-section td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.history-section th {
+  background-color: #f2f2f2;
+}
+
+.balance p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.warning {
+  background-color: #ffcccc;
+}
+
+.balance {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 0 20px;
+  text-align: center; /* Posisikan konten di tengah */
+}
+
+.balance h2 {
+  margin-top: 0;
+}
+

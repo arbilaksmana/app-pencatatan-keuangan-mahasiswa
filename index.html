@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pencatatan Keuangan Mahasiswa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="main-title">Pencatatan Keuangan Mahasiswa</h1>
+  <div class="main-section">
+    <div class="input-section">
+      <h2>Input Transaksi</h2>
+      <label for="duration">Durasi Pencatatan:</label>
+      <select id="duration" onchange="setTransactionDuration()">
+        <option value="perhari">Per Hari</option>
+        <option value="perbulan">Per Bulan</option>
+        <option value="persemester">Per Semester</option>
+        <option value="pertahun">Per Tahun</option>
+      </select>
+      <label for="type">Jenis Transaksi:</label>
+      <select id="type">
+        <option value="pemasukan">Pemasukan</option>
+        <option value="pengeluaran">Pengeluaran</option>
+      </select>
+      <label for="description">Deskripsi:</label>
+      <input required type="text" id="description" placeholder="Masukkan deskripsi"/>
+      <label for="amount">Jumlah:</label>
+      <input required type="number" id="amount" placeholder="Masukkan jumlah"/>
+      <label for="amountType">Tipe Jumlah:</label>
+      <select id="amountType">
+        <option value="nominal">Nominal</option>
+        <option value="persentase">Persentase</option>
+      </select>
+      <button onclick="addTransaction()">Tambah</button>
+    </div>
+    <div class="history-section">
+      <h2>Riwayat Transaksi</h2>
+      <table id="transaction-table">
+        <thead>
+        </thead>
+        <tbody id="transaction-list"></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="balance">
+    <h2>Total Saldo:</h2>
+    <p id="balance-amount">0</p>
+    <p id="warning-message"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
